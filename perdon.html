@@ -6,6 +6,25 @@
     <title>Te adoro</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url(https://i.imgur.com/9TISwv0.jpeg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         div {
             display: flex;
             flex-direction: column;
@@ -25,36 +44,28 @@
             border-radius: 10px;
             background-color: transparent;
             font-size: xx-large;
+            margin: 0 20px; 
         }
 
         #Si {
-            grid-row:  5;
-            grid-column: 5;
+            grid-row: 8;
+            grid-column: 2;
         }
 
         #No {
-            grid-row: 5;
-            grid-column: 6;
+            grid-row: 8;
+            grid-column: 10;
         }
 
         section {
             display: grid;
-            grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-            grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-            width: 1200px;
-            height: 600px;
+            grid-template-columns: repeat(10, 10%);
+            grid-template-rows: repeat(10, 10%);
+            width: 100%;
+            max-width: 1200px;
+            height: 200px;
             align-items: center;
             justify-items: center;
-        }
-
-        body {
-            max-width: 1280px;
-            max-height: 1073px;
-            margin: 0 auto;
-            background-image: url(https://i.imgur.com/9TISwv0.jpeg);
-            background-repeat: no-repeat; 
-            background-position: center center; 
-            background-size: cover;
         }
 
         p {
